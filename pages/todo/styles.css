@@ -59,7 +59,6 @@ textarea {
   width: 100%;
   padding: 8px;
   font-size: 16px;
-
 }
 
 input,
@@ -92,7 +91,7 @@ li {
   padding: 20px;
   border: solid 1px #ccc;
   position: relative; 
-  padding-right: 50px; 
+  padding-right: 80px; /* Ajustado para acomodar os dois botões */
 }
 
 li p {
@@ -100,16 +99,24 @@ li p {
   margin-top: 10px;
 }
 
-.edit-btn {
+.edit-btn,
+.delete-btn {
   position: absolute;
   top: 10px;
-  right: 10px;
   background-color: #676767;
   border: none;
   border-radius: 5px;
   padding: 5px;
   cursor: pointer;
   color: white;
+}
+
+.edit-btn {
+  right: 40px; /* Ajustado para dar espaço ao botão de exclusão */
+}
+
+.delete-btn {
+  right: 10px;
 }
 
 dialog {
@@ -132,14 +139,6 @@ dialog textarea {
   font-size: 16px;
   outline: none;
   border-radius: 3px;
-}
-
-.green-text {
-  border: 1px solid rgba(0, 192, 0, 0.747) !important; /* Cor da borda da caixa de texto especificada */
-}
-
-.green-border {
-  border: 1px solid rgba(0, 192, 0, 0.747) !important; /* Cor da borda da caixa de texto especificada */
 }
 
 .button-group {
